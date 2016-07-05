@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="NotoSans-Bold.ttf">
+            <string>NotoSans-Bold</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyFamilySocialApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +22,63 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v7P-46-Aed">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In / Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NU5-Es-01r">
+                                        <rect key="frame" x="20" y="35" width="151" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="M44-cX-4O0"/>
+                                            <constraint firstAttribute="width" constant="151" id="VyO-zh-O8n"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="code-icon-logo" translatesAutoresizingMaskIntoConstraints="NO" id="gbn-xJ-O6K">
+                                        <rect key="frame" x="547" y="28" width="33" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="Mfc-Xs-Buq"/>
+                                            <constraint firstAttribute="width" constant="33" id="Yf2-Iz-Gzt"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.49845480380000001" blue="0.0032517767590000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="NU5-Es-01r" firstAttribute="leading" secondItem="v7P-46-Aed" secondAttribute="leading" constant="20" id="EqE-aC-qzF"/>
+                                    <constraint firstAttribute="height" constant="128" id="NDP-yA-KlW"/>
+                                    <constraint firstItem="NU5-Es-01r" firstAttribute="top" secondItem="v7P-46-Aed" secondAttribute="top" constant="35" id="j59-tP-UiA"/>
+                                    <constraint firstAttribute="trailing" secondItem="gbn-xJ-O6K" secondAttribute="trailing" constant="20" id="uBX-Yk-f6j"/>
+                                    <constraint firstItem="gbn-xJ-O6K" firstAttribute="top" secondItem="v7P-46-Aed" secondAttribute="top" constant="28" id="zEN-8a-iXy"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oGl-bs-AaZ" customClass="MaterialView" customModule="MyFamilySocialApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="75" width="560" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="5ko-KS-nWr"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="z5Q-SW-9tq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="oGl-bs-AaZ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="6tE-pq-jNA"/>
+                            <constraint firstItem="v7P-46-Aed" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7PB-TY-zzb"/>
+                            <constraint firstAttribute="trailing" secondItem="v7P-46-Aed" secondAttribute="trailing" id="BpT-gW-46q"/>
+                            <constraint firstItem="v7P-46-Aed" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Hsg-tB-KgV"/>
+                            <constraint firstItem="oGl-bs-AaZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="55" id="XDt-ie-jMT"/>
+                            <constraint firstItem="oGl-bs-AaZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="h6C-ox-kat"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="459" y="599"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="code-icon-logo" width="318" height="281"/>
+    </resources>
 </document>

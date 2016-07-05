@@ -4,4 +4,6 @@ use_frameworks!
 
 target 'MyFamilySocialApp' do
     pod 'Alamofire', '~> 3.4'
+    pod 'Firebase'
+    pod 'Firebase/Auth'
 end
