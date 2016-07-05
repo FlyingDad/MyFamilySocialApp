@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12083D3149FE23296F829C99 /* Pods_MyFamilySocialApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A014BD35B012CB41B89D2FA3 /* Pods_MyFamilySocialApp.framework */; };
 		4C17352A1D2B1B7300EF991B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1735291D2B1B7300EF991B /* AppDelegate.swift */; };
 		4C17352C1D2B1B7300EF991B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C17352B1D2B1B7300EF991B /* ViewController.swift */; };
 		4C17352F1D2B1B7300EF991B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C17352D1D2B1B7300EF991B /* Main.storyboard */; };
 		4C1735311D2B1B7300EF991B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C1735301D2B1B7300EF991B /* Assets.xcassets */; };
 		4C1735341D2B1B7300EF991B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C1735321D2B1B7300EF991B /* LaunchScreen.storyboard */; };
+		4CCE37441D2B3398009E861A /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CCE37421D2B3398009E861A /* FBSDKCoreKit.framework */; };
+		4CCE37451D2B3398009E861A /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CCE37431D2B3398009E861A /* FBSDKLoginKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28B0B0D5FF6B85271AC56CDD /* Pods-MyFamilySocialApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFamilySocialApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyFamilySocialApp/Pods-MyFamilySocialApp.release.xcconfig"; sourceTree = "<group>"; };
 		4C1735261D2B1B7300EF991B /* MyFamilySocialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFamilySocialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C1735291D2B1B7300EF991B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C17352B1D2B1B7300EF991B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,10 @@
 		4C1735301D2B1B7300EF991B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C1735331D2B1B7300EF991B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C1735351D2B1B7300EF991B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CCE37421D2B3398009E861A /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		4CCE37431D2B3398009E861A /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		5CBA5A22CC792C6E0FE7F1AC /* Pods-MyFamilySocialApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFamilySocialApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyFamilySocialApp/Pods-MyFamilySocialApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A014BD35B012CB41B89D2FA3 /* Pods_MyFamilySocialApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFamilySocialApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12083D3149FE23296F829C99 /* Pods_MyFamilySocialApp.framework in Frameworks */,
+				4CCE37441D2B3398009E861A /* FBSDKCoreKit.framework in Frameworks */,
+				4CCE37451D2B3398009E861A /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24B22E6463034C351472D728 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5CBA5A22CC792C6E0FE7F1AC /* Pods-MyFamilySocialApp.debug.xcconfig */,
+				28B0B0D5FF6B85271AC56CDD /* Pods-MyFamilySocialApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4C17351D1D2B1B7300EF991B = {
 			isa = PBXGroup;
 			children = (
 				4C1735281D2B1B7300EF991B /* MyFamilySocialApp */,
 				4C1735271D2B1B7300EF991B /* Products */,
+				24B22E6463034C351472D728 /* Pods */,
+				5DB0A21F21449483A13D9039 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +86,16 @@
 			path = MyFamilySocialApp;
 			sourceTree = "<group>";
 		};
+		5DB0A21F21449483A13D9039 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CCE37421D2B3398009E861A /* FBSDKCoreKit.framework */,
+				4CCE37431D2B3398009E861A /* FBSDKLoginKit.framework */,
+				A014BD35B012CB41B89D2FA3 /* Pods_MyFamilySocialApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +103,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C1735381D2B1B7300EF991B /* Build configuration list for PBXNativeTarget "MyFamilySocialApp" */;
 			buildPhases = (
+				9144B623B8CB2A62A0B2657B /* [CP] Check Pods Manifest.lock */,
 				4C1735221D2B1B7300EF991B /* Sources */,
 				4C1735231D2B1B7300EF991B /* Frameworks */,
 				4C1735241D2B1B7300EF991B /* Resources */,
+				346F693C222FC7750FFE8F28 /* [CP] Embed Pods Frameworks */,
+				55CDB4AEB0CC8C062FF40514 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +165,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		346F693C222FC7750FFE8F28 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyFamilySocialApp/Pods-MyFamilySocialApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55CDB4AEB0CC8C062FF40514 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyFamilySocialApp/Pods-MyFamilySocialApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9144B623B8CB2A62A0B2657B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4C1735221D2B1B7300EF991B /* Sources */ = {
@@ -250,8 +333,13 @@
 		};
 		4C1735391D2B1B7300EF991B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CBA5A22CC792C6E0FE7F1AC /* Pods-MyFamilySocialApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MyFamilySocialApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mgktechsolutions.MyFamilySocialApp;
@@ -261,8 +349,13 @@
 		};
 		4C17353A1D2B1B7300EF991B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28B0B0D5FF6B85271AC56CDD /* Pods-MyFamilySocialApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MyFamilySocialApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mgktechsolutions.MyFamilySocialApp;
@@ -289,6 +382,7 @@
 				4C17353A1D2B1B7300EF991B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
