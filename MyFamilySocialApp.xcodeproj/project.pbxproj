@@ -24,6 +24,7 @@
 		4CFF22E41D2B4B5100015FF9 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFF22E11D2B4B5100015FF9 /* MaterialTextField.swift */; };
 		4CFF22E51D2B4B5100015FF9 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFF22E21D2B4B5100015FF9 /* MaterialView.swift */; };
 		4CFF22E71D2B4B5B00015FF9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFF22E61D2B4B5B00015FF9 /* Constants.swift */; };
+		4CFF22EA1D2C0AD100015FF9 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFF22E91D2C0AD100015FF9 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		4CFF22E11D2B4B5100015FF9 /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
 		4CFF22E21D2B4B5100015FF9 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		4CFF22E61D2B4B5B00015FF9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4CFF22E91D2C0AD100015FF9 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		5CBA5A22CC792C6E0FE7F1AC /* Pods-MyFamilySocialApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFamilySocialApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyFamilySocialApp/Pods-MyFamilySocialApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A014BD35B012CB41B89D2FA3 /* Pods_MyFamilySocialApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFamilySocialApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -94,6 +96,7 @@
 		4C1735281D2B1B7300EF991B /* MyFamilySocialApp */ = {
 			isa = PBXGroup;
 			children = (
+				4CFF22E81D2C0AB800015FF9 /* Services */,
 				4CFF22DC1D2B4A8F00015FF9 /* Model */,
 				4CFF22DD1D2B4A9500015FF9 /* View */,
 				4CFF22DE1D2B4A9B00015FF9 /* Controller */,
@@ -152,6 +155,14 @@
 				4CFF22E61D2B4B5B00015FF9 /* Constants.swift */,
 			);
 			name = Util;
+			sourceTree = "<group>";
+		};
+		4CFF22E81D2C0AB800015FF9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4CFF22E91D2C0AD100015FF9 /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		5DB0A21F21449483A13D9039 /* Frameworks */ = {
@@ -293,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C17352C1D2B1B7300EF991B /* ViewController.swift in Sources */,
+				4CFF22EA1D2C0AD100015FF9 /* DataService.swift in Sources */,
 				4C17352A1D2B1B7300EF991B /* AppDelegate.swift in Sources */,
 				4CFF22E51D2B4B5100015FF9 /* MaterialView.swift in Sources */,
 				4CFF22E41D2B4B5100015FF9 /* MaterialTextField.swift in Sources */,
